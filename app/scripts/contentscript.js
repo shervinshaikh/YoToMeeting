@@ -22,7 +22,7 @@ function checkForParticipants(){
   var numParticipants = document.getElementsByClassName('participants').length;
   if(numParticipants === 0){
     setTimeout(checkForParticipants, 100);
-  } else {
+  } else if(username !== undefined){
     console.log("Someone joined! Sending a YO to", username);
 
     //curl --data "api_token=b9592bb7-8505-d615-160b-a2dcbf818449&username=sherv8" http://api.justyo.co/yo/
