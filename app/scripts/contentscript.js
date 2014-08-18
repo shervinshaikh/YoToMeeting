@@ -25,11 +25,11 @@ function checkForParticipants(){
   } else if(username !== undefined){
     console.log("Someone joined! Sending a YO to", username);
 
-    //curl --data "api_token=b9592bb7-8505-d615-160b-a2dcbf818449&username=sherv8" http://api.justyo.co/yo/
+    //curl --data "api_token=b2e86412-1ab4-261b-f4ad-bb2c63e44994&username=sherv8" http://api.justyo.co/yo/
     var request = new XMLHttpRequest();
     request.open("POST", 'http://api.justyo.co/yo/', false);
     request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    request.send('api_token=b9592bb7-8505-d615-160b-a2dcbf818449&username=' + username);
+    request.send('api_token=b2e86412-1ab4-261b-f4ad-bb2c63e44994&username=' + username);
     console.log(request.responseText);
   }
 }

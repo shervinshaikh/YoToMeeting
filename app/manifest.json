@@ -1,6 +1,6 @@
 {
-    "name": "Yo G2M Free",
-    "version": "0.0.4",
+    "name": "YoToMeeting",
+    "version": "0.0.5",
     "manifest_version": 2,
     "description": "Sends you a Yo when someone has entered your G2M free room",
     "icons": {
