@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="yo">
   <head>
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -10,8 +10,8 @@
     <link href="styles/main.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
-  <body>
-    <h1>YoToMeeting - Options</h1>
+  <body class="yo yo-body yo-text">
+    <h1 class="yo-h1">YoToMeeting - Options</h1>
     <div id="main">
       <div class="row-lg current-title">Current <b>Yo</b> account:</div>
       <div class="row-lg info" id="currentUser"></div>
@@ -19,7 +19,7 @@
       <br/>
 
       <div class="row-lg form">Change account:</div>
-      <input id="options-input" class="row-lg username" type="text" id="yoUsername" autocomplete="off" required placeholder="YO Username"></input>
+      <input id="options-input" class="row-lg username yo-input" type="text" id="yoUsername" autocomplete="off" required placeholder="YO Username"></input>
       <div id="submit" class="row-lg insta" onclick()="saveChanges()">Submit</div>
     </div>
 

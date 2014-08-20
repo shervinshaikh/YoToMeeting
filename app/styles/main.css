@@ -1,4 +1,4 @@
-* {
+.yo-text {
   color: white;
   font-family: 'Montserrat', arial, sans-serif;
   text-align: center;
@@ -9,27 +9,21 @@
   -ms-user-select: none;
   user-select: none;
 }
-html,body {
+.yo {
   margin-left:0;
   margin-right:0;
   padding-left:0;
   padding-right:0;
   margin-bottom:30px;
 }
-body {
+.yo-body {
   background-color: #9b58b5;
 }
-h1 {
+.yo-h1 {
   font-size: 50px;
   margin: 20px;
 }
-a {
-  text-decoration: none;
-}
-a * {
-  cursor:pointer!important;
-}
-input {
+.yo-input {
   margin:0;
   outline: none;
   border:none;
@@ -38,25 +32,25 @@ input {
   text-align:left;
   text-transform: uppercase;
 }
-input:hover {
+.yo-input:hover {
   cursor:text;
 }
-input::-webkit-input-placeholder {
+.yo-input::-webkit-input-placeholder {
    text-transform: none;
    color:white;
 }
 
-input:-moz-placeholder { /* Firefox 18- */
+.yo-input:-moz-placeholder { /* Firefox 18- */
    text-transform: none;
    color:white;
 }
 
-input::-moz-placeholder {  /* Firefox 19+ */
+.yo-input::-moz-placeholder {  /* Firefox 19+ */
    text-transform: none;
    color:white;
 }
 
-input:-ms-input-placeholder {
+.yo-input:-ms-input-placeholder {
    text-transform: none;
    color:white;
 }
