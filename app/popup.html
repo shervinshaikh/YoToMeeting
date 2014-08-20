@@ -6,18 +6,19 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css styles/main.css -->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:700,400" data-original-title="" title="">
         <link href="styles/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <!-- endbuild -->
     </head>
     <body>
         <h1>YoToMeeting</h1>
 
-        <p>Current linked <b>Yo</b> account: <div id="currentUser"></div></p>
-        
-        <br/><br/>
-        <p>Enter your <b>Yo</b> Username:</p><input type="text" id="yoUsername"></input>
-        <button id="submit" class="btn btn-primary" onclick()="saveChanges()">Submit</button>
+        <div class="row current-title">Current <b>Yo</b> account:</div>
+        <div class="row info" id="currentUser"></div>
+        <br/>
+        <div class="row form">Change account:</div>
+        <input class="row username" type="text" id="yoUsername" autocomplete="off" required placeholder="YO Username"></input>
+        <div id="submit" class="row insta" onclick()="saveChanges()">Submit</div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

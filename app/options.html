@@ -1,31 +1,35 @@
 <!doctype html>
 <html>
-    <head>
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css styles/main.css -->
-        <link href="styles/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <!-- endbuild -->
-    </head>
-    <body>
-        <h1>YoToMeeting - Options</h1>
+  <head>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:700,400" data-original-title="" title="">
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <h1>YoToMeeting - Options</h1>
+    <div id="main">
+      <div class="row-lg current-title">Current <b>Yo</b> account:</div>
+      <div class="row-lg info" id="currentUser"></div>
 
-        <p>Current linked <b>Yo</b> account: <div id="currentUser"></div></p>
-        
-        <br/><br/>
-        <p>Enter your <b>Yo</b> Username:</p><input type="text" id="yoUsername"></input>
-        <button id="submit" class="btn btn-primary" onclick()="saveChanges()">Submit</button>
-                
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <!-- endbower -->
-        <!-- endbuild -->
+      <br/>
 
-        <!-- build:js scripts/options.js -->
-        <script src="scripts/options.js"></script>
-        <!-- endbuild -->
-    </body>
+      <div class="row-lg form">Change account:</div>
+      <input id="options-input" class="row-lg username" type="text" id="yoUsername" autocomplete="off" required placeholder="YO Username"></input>
+      <div id="submit" class="row-lg insta" onclick()="saveChanges()">Submit</div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/options.js -->
+    <script src="scripts/options.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
