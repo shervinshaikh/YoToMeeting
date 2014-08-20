@@ -11,3 +11,13 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 });
 
 console.log('\'Allo \'Allo! Event Page for Page Action');
+
+chrome.storage.sync.get('yoUsername', function(data){
+  console.log("GET:", data.yoUsername);
+
+  // Send username to Heroku app
+  var req = new XMLHttpRequest();
+  req.open("GET", 'http://yoshervinshaikh.herokuapp.com/?username=' + data.yoUsername + '&extension=yes', false);
+  req.send(null);
+  console.log(req.responseText);
+});
