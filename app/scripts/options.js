@@ -26,10 +26,12 @@ function saveChanges() {
   });
 
   // Send username to Heroku app
-  var req = new XMLHttpRequest();
-  req.open("GET", 'http://yoshervinshaikh.herokuapp.com/?username=' + yoUsername + '&extension=yes', false);
-  req.send(null);
-  console.log(req.responseText);
+  if(yoUsername !== undefined){
+    var req = new XMLHttpRequest();
+    req.open("GET", 'http://yoshervinshaikh.herokuapp.com/?username=' + yoUsername + '&extension=yes', false);
+    req.send(null);
+    console.log(req.responseText);
+  }
 }
 
 chrome.storage.onChanged.addListener(function(changes, namespace) {
